@@ -13,8 +13,9 @@ body {
 }
 
 .navbar {
+    z-index: 1;
     background-color: rgb(0,0,0,0.3) !important;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
 }
 
 .nav-item {
@@ -189,4 +190,71 @@ body {
     background-size: cover;
     height: 250px;
     width: 100%;
+}
+
+.footer {
+    height: 500px;
+    width: 100%;
+}
+
+.people {
+    height: 200px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact {
+    height: 300px;
+    width: 100%;
+    background-image: url('../assets/footer-img.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.badge {
+    border: 1px solid black;
+}
+
+.ppl {
+    text-align: center;
+}
+
+.divider {
+    height: 100px;
+    width: 2px;
+    background-color: black;
+}
+
+.link-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80%;
+    width: 70%;
+    background-color: rgba(256,256,256,0.4);
+    backdrop-filter: blur(10px);
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.links {
+    width: 90%;
+}
+
+.link-box-in {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.link-box-inner {
+    margin: 10px 0;
+    width: 40%;
+    font-weight: 600;
 }
