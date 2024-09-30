@@ -19,3 +19,11 @@ app.get('/', (req, res) => {
 app.get('/about', (req,res) => {
     res.render('about.ejs')
 });
+
+app.get('/event', (req, res) => {
+    res.render('event.ejs');
+});
+
+app.get('*', (req, res) => {
+    res.send("<h1>Page not found</h1>");
+});
