@@ -2,6 +2,10 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
+.serif {
+    font-family: 'Times New Roman', Times, serif;
+}
+
 /*? Nav bar */
 .navbar-nav {
     /* background-color: yellow !important; */
@@ -50,6 +54,10 @@ body {
     justify-content: center;
 }
 
+.navbar-toggler {
+    background-color: white;
+}
+
 /*? landing page */
 .main-body {
     /* margin-top: 70px; */
@@ -62,15 +70,20 @@ body {
 
 .image {
     /* border-radius: 30px; */
-    background-image: url("../assets/pnf-logo.png");
-    background-size: contain;
+    background-image: url("../assets/pnf-logo.jpg");
+    background-size: cover;
     /* background-repeat: no-repeat; */
     width: 100%;
     height: 70%;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: space-evenly;
     align-items: center;
+}
+
+.image img {
+    margin-top: 30px;
+    width: 50%;
 }
 
 .main-con {
@@ -105,7 +118,6 @@ body {
 /*? events */
 .event {
     height: 110vh;
-    /* background-color: yellow; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -118,7 +130,7 @@ body {
 
 .event-box {
     width: 95%;
-    height: 80%;
+    height: 100%;
     background-image: url("../assets/events-bg.png");
     background-size: cover;
     display: flex;
@@ -126,7 +138,6 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    /* background-color: yellow; */
 }
 
 .event-pr {
@@ -215,6 +226,7 @@ body {
     color: white;
 }
 
+/*? footer */
 .footer {
     height: 300px;
     width: 100%;
@@ -264,7 +276,6 @@ body {
 .link-box {
     color: white;
     display: flex;
-    /* flex-direction: column; */
     align-items: center;
     justify-content: space-around;
     height: 80%;
@@ -283,10 +294,8 @@ body {
     font-weight: 600;
 }
 
-/* event */
+/*? event */
 .main-body-evnt {
-    /* margin-top: 70px; */
-    /* background-color: aqua; */
     height: 80vh;
     display: flex;
     flex-direction: column;
@@ -316,6 +325,7 @@ body {
     align-items: center;
 }
 
+/*? evt-people  */
 .prpl {
     z-index: -1;
     position: absolute;
@@ -361,14 +371,16 @@ body {
 
 .evt-ppl-up {
     width: 30%;
+    color: white;
+    text-align: center;
 }
 
 .evt-foot-1 {
+    padding: 50px 0;
+    background-color: rgb(71, 10, 71);
     display: flex;
     justify-content: space-around;
-    align-items: end;
-    position: relative;
-    top: 100px;
+    align-items: center;
 }
 
 .evt-foot-1 h1 {
@@ -379,9 +391,184 @@ body {
     display: flex;
 }
 
-.prpl-str {
-    width: 100%;
-    height: 100px;
-    background-color: rgb(71, 10, 71);
-    z-index: -1;
+.footer-low {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.link-box-inner > a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-low > a {
+    text-decoration: none;
+    color: black;
+}
+
+/*? error message */ 
+
+.err {
+    display: flex;
+    justify-content: center;
+}
+
+.alert {
+    text-align: center;
+    width: 80%;
+}
+
+/*? spacing */
+
+.space {
+    height: 30px;
+    width: 100vw;
+    margin: 10px;
+}
+
+/*? Responsiveness */
+
+@media (max-width: 992px) {
+    .event-box {
+        height: 120%;
+    }
+
+    .event-pr {
+        width: 80%;
+        font-size: 10px;
+        font-weight: 500;
+    }
+
+    .evt-img {
+        height: 200px;
+    }
+
+    .main-con {
+        color: black;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        width: 100%;
+        height: 30%;
+    }
+
+    .main-con-pr {
+        margin-top: 10px;
+        width: 80%;
+        font-size: 12px;
+    }
+
+    .ppl-box {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .people {
+        margin: 50px 0;
+    }
+
+    .ppl {
+        margin: 20px;
+    }
+
+    .ppl > h3 {
+        font-size: 18px;
+    }
+
+    .evt-img-con {
+        font-size: 10px;
+    }
+
+    .evt-img-hd {
+        font-size: 15px;
+    }
+
+    .evt-info-graph {
+        height: 100px;
+    }
+
+    .about-land {
+        flex-direction: column;
+    }
+
+    .evt-page-img {
+        height: 200px;
+    }
+
+    .prpl {
+        display: none;
+    }
+
+    .arya > img, .alakh > img, .img-vanish {
+        display: none;
+    }
+
+    .prpl-str {
+        width: 100%;
+        height: 150px;
+        background-color: white;
+    }
+
+    .arya > .evt-ppl-up, .alakh > .evt-ppl-up {
+        color: white;
+        margin: 20px;
+    }
+
+    .evt-foot-1 {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgb(71, 10, 71);
+    }
+
+
+    .evt-ppls {
+        text-align: center;
+        flex-direction: column;
+        margin: 50px 0;
+        display: flex;
+        width: 60%;
+        justify-content: space-between;
+    }
+
+    .evt-ppl {
+        width: 100%;
+        margin: 20px;
+    }
+
+    .evt-ppl-up {
+        margin: 20px 0;
+    }
+
+    .blck {
+        display: none;
+    }
+
+    .abt-img-con {
+        width: 80%;
+        font-size: 15px;
+    }
+
+    .abt-img {
+        width: 100vw;
+    }
+
+    .vision, .mission {
+        flex-direction: column;
+    }
+
+    .vis-img, .mis-img {
+        width: 80%;
+    }
+
+    .link-box {
+        flex-direction: column;
+    }
+
+    .links {
+        margin: 10px;
+        width: 100%;
+    }
 }

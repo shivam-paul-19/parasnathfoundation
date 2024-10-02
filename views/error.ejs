@@ -1,0 +1,40 @@
+<%- include('boilerplate.ejs') %>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="http://localhost:8080/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://localhost:8080/about">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://localhost:8080/event">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">People</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- error message -->
+        <br><br><br>
+        <div class="err">
+            <div class="alert alert-danger" role="alert">
+                <h1><b>Error 404 !</b></h1>
+                <h4>Page not found :(</h4>
+            </div>
+        </div>
+</body>
